@@ -11,12 +11,13 @@ sudo apt install zsh
 # config oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# im still not sure about lines 15 and 16.
+# Reset zsh for new config:
+exec zsh
+
 # install p10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-
-# Reset zsh for new config:
-exec zsh
 
 # alias for typing
 sudo echo "alias l=\"ls -lha\"" | tee -a ~/.bashrc
