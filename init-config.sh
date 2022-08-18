@@ -34,7 +34,7 @@ sudo echo "alias dkc=\"docker compose\"" | tee -a ~/.zshrc
 # install awesome vim
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
-sudo echo "set numbers" | tee -a ~/.vim_runtime/my_configs.vim
+sudo echo "set number" | tee -a ~/.vim_runtime/my_configs.vim
 sudo echo "colorscheme dracula" | tee -a ~/.vim_runtime/my_configs.vim
 
 # config nano
