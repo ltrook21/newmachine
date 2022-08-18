@@ -13,7 +13,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 # im still not sure about lines 15 and 16.
 # Reset zsh for new config:
-exec zsh
+# exec zsh
 
 # install p10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
@@ -38,3 +38,6 @@ sudo echo "set numbers" | tee -a ~/.vim_runtime/my_configs.vim
 
 # config nano
 sudo cp ./.nanorc ~
+
+
+exec zsh
