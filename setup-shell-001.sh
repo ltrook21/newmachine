@@ -5,7 +5,7 @@ sudo apt update -y && sudo apt upgrade
 sudo cp ~/.bashrc ~/.bashrc.bk
 
 # install zsh
-sudo apt install zsh
+sudo apt install zsh -y
 
 # config oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

@@ -1,9 +1,9 @@
 #! /bin/bash
 
-echo "Running initial scripts..."
+echo "\n\nRunning initial scripts...\n\n"
 
-echo "001 running..."
+echo "\n\n001 running...\n\n"
 sudo bash setup-shell-001.sh
 
-echo "002 running..."
+echo "\n\n002 running...\n\n"
 sudo bash setup-shell-002.sh
