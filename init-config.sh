@@ -2,6 +2,9 @@
 
 sudo apt update -y && sudo apt upgrade
 
+# This is for theming only. Moved to different file
+# sudo apt install breeze-cursor-theme
+
 # backup bashrc
 sudo cp ~/.bashrc ~/.bashrc.bk
 
