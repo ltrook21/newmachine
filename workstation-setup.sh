@@ -24,15 +24,14 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 sudo apt-get update -y
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 
 ## MINIKUBE
 echo "\n\nMINIKUBE\n\n"
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install minikube-linux-amd64 /usr/local/bin/minikube -y
-
+sudo install -y minikube-linux-amd64 /usr/local/bin/minikube
 
 ## KUBECTX
 echo "\n\nKUBECTX\n\n"
-sudo apt install kubectx -y
+sudo apt install -y kubectx
