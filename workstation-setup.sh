@@ -30,8 +30,17 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plu
 ## MINIKUBE
 echo "\n\nMINIKUBE\n\n"
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install -y minikube-linux-amd64 /usr/local/bin/minikube
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 ## KUBECTX
-echo "\n\nKUBECTX\n\n"
-sudo apt install -y kubectx
+echo \n "KUBECTX"\n
+# sudo apt install -y kubectx
+sudo mkdir -p ~/.oh-my-zsh/completions
+sudo chmod -R 755 ~/.oh-my-zsh/completions 
+sudo ln -s /opt/kubectx/completion/_kubectx.zsh ~/.oh-my-zsh/completions/_kubectx.zsh
+sudo ln -s /opt/kubectx/completion/_kubens.zsh ~/.oh-my-zsh/completions/_kubens.zsh 
+
+
+sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx 
+sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
+sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
