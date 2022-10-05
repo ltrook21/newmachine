@@ -16,6 +16,7 @@ sudo echo "alias nv=\"nvim\"" | tee -a ~/.bashrc
 sudo echo "alias kgp=\"k get po\"" | tee -a ~/.bashrc
 sudo echo "alias kgs=\"k get svc\"" | tee -a ~/.bashrc
 sudo echo "alias kg=\"k get\"" | tee -a ~/.bashrc
+sudo echo "alias kgd=\"k get deploy\"" | tee -a ~/.bashrc
 sudo echo "alias kc=\"k create\"" | tee -a ~/.bashrc
 sudo echo "alias kr=\"k run\"" | tee -a ~/.bashrc
 sudo echo "alias ka=\"k apply -f \"" | tee -a ~/.bashrc
