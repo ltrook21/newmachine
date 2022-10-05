@@ -22,21 +22,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
-# alias for typing
-sudo echo "alias l=\"ls -lha\"" | tee -a ~/.bashrc
-sudo echo "alias k=\"kubectl\"" | tee -a ~/.bashrc
-sudo echo "alias kx=\"kubectx\"" | tee -a ~/.bashrc
-sudo echo "alias mk=\"minikube\"" | tee -a ~/.bashrc
-sudo echo "alias dk=\"docker\"" | tee -a ~/.bashrc
-sudo echo "alias dkc=\"docker compose\"" | tee -a ~/.bashrc
-sudo echo "alias nv=\"nvim\"" | tee -a ~/.bashrc
-
-sudo echo "alias k=\"kubectl\"" | tee -a ~/.zshrc
-sudo echo "alias kx=\"kubectx\"" | tee -a ~/.zshrc
-sudo echo "alias mk=\"minikube\"" | tee -a ~/.zshrc
-sudo echo "alias dk=\"docker\"" | tee -a ~/.zshrc
-sudo echo "alias dkc=\"docker compose\"" | tee -a ~/.zshrc
-sudo echo "alias nv=\"nvim\"" | tee -a ~/.zshrc
 
 # install awesome vim
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
