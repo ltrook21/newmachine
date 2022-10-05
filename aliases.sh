@@ -13,6 +13,16 @@ sudo echo "alias dkc=\"docker compose\"" | tee -a ~/.bashrc
 sudo echo "alias nv=\"nvim\"" | tee -a ~/.bashrc
 
 
+sudo echo "alias kgp=\"k get po\"" | tee -a ~/.bashrc
+sudo echo "alias kgs=\"k get svc\"" | tee -a ~/.bashrc
+sudo echo "alias kg=\"k get\"" | tee -a ~/.bashrc
+sudo echo "alias kc=\"k create\"" | tee -a ~/.bashrc
+sudo echo "alias kr=\"k run\"" | tee -a ~/.bashrc
+sudo echo "alias ka=\"k apply -f \"" | tee -a ~/.bashrc
+sudo echo "alias kpf=\"k port-forward\"" | tee -a ~/.bashrc
+sudo echo "alias kds=\"k describe\"" | tee -a ~/.bashrc
+sudo echo "alias kd=\"k delete\"" | tee -a ~/.bashrc
+
 
 
 # ZSH
@@ -30,6 +40,7 @@ sudo echo "alias nv=\"nvim\"" | tee -a ~/.zshrc
 sudo echo "alias kgp=\"k get po\"" | tee -a ~/.zshrc
 sudo echo "alias kgs=\"k get svc\"" | tee -a ~/.zshrc
 sudo echo "alias kg=\"k get\"" | tee -a ~/.zshrc
+sudo echo "alias kgd=\"k get deploy\"" | tee -a ~/.zshrc
 sudo echo "alias kc=\"k create\"" | tee -a ~/.zshrc
 sudo echo "alias kr=\"k run\"" | tee -a ~/.zshrc
 sudo echo "alias ka=\"k apply -f \"" | tee -a ~/.zshrc
