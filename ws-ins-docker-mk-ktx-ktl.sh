@@ -50,3 +50,11 @@ sudo ln -s /opt/kubectx/completion/_kubens.zsh ~/.oh-my-zsh/completions/_kubens.
 sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx 
 sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
 sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
+
+
+
+### NeoVim
+
+wget https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.deb
+sudo dpkg -i nvim-linux64.deb
+
