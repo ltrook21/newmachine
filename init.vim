@@ -37,7 +37,7 @@ let g:ayucolor="dark"   " for dark version of theme
 " NOTE: g:ayucolor will default to 'dark' when not set. 
 
 colorscheme ayu
-
+hi EndOfBuffer guibg=bg guifg=bg " this hides the "~" in the nerdtree menu
 
 " end theme
 "
