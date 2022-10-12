@@ -37,10 +37,16 @@ let g:ayucolor="dark"   " for dark version of theme
 " NOTE: g:ayucolor will default to 'dark' when not set. 
 
 colorscheme ayu
+
 hi EndOfBuffer guibg=bg guifg=bg " this hides the "~" in the nerdtree menu
 
+
+" Transparency - Idk If I like it so far...
+" hi Normal guibg=NONE ctermbg=NONE
+" hi NormalNC
+
+" end transparency
 " end theme
-"
 
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
