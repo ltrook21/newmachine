@@ -48,3 +48,9 @@ sudo echo "alias ka=\"k apply -f \"" | tee -a ~/.zshrc
 sudo echo "alias kpf=\"k port-forward\"" | tee -a ~/.zshrc
 sudo echo "alias kds=\"k describe\"" | tee -a ~/.zshrc
 sudo echo "alias kd=\"k delete\"" | tee -a ~/.zshrc
+
+sudo echo "alias venv=\"source venv/bin/activate\"" | tee -a ~/.zshrc
+sudo echo "alias pmr=\"python manage.py runserver\"" | tee -a ~/.zshrc
+sudo echo "alias gtc=\"git commit -a\"" | tee -a ~/.zshrc
+sudo echo "alias gtp=\"git push\"" | tee -a ~/.zshrc
+
