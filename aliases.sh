@@ -53,4 +53,4 @@ sudo echo "alias venv=\"source venv/bin/activate\"" | tee -a ~/.zshrc
 sudo echo "alias pmr=\"python manage.py runserver\"" | tee -a ~/.zshrc
 sudo echo "alias gtc=\"git commit -a\"" | tee -a ~/.zshrc
 sudo echo "alias gtp=\"git push\"" | tee -a ~/.zshrc
-
+sudo echo "alias gtpu=\"git pull\"" | tee -a ~/.zshrc
