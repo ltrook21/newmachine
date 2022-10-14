@@ -55,3 +55,5 @@ sudo echo "alias gtc=\"git commit -a\"" | tee -a ~/.zshrc
 sudo echo "alias gtp=\"git push\"" | tee -a ~/.zshrc
 sudo echo "alias gtpu=\"git pull\"" | tee -a ~/.zshrc
 sudo echo "alias kns=\"kubens\"" | tee -a ~/.zshrc
+
+sudo echo "eval \$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" | tee -a ~/.zshrc
