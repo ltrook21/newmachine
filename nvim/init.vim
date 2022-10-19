@@ -17,7 +17,7 @@ Plug 'https://github.com/sam4llis/nvim-tundra' " Colorscheme tundra
 Plug 'https://github.com/catppuccin/nvim' " Colorscheme tundra
 Plug 'Luxed/ayu-vim' " ayu vim
 Plug 'https://github.com/Shatur/neovim-ayu' " neovim ayu
-Plug 'tpope/vim-fugitive' " fugitive for git in nvim
+Plug 'tpope/vim-fugitive' " git tool for nvim
 call plug#end()
 
 " let g:catppuccin_flavour = "macchiato" " latte, frappe, macchiato, mocha
@@ -52,6 +52,8 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <C-b> :Bookmark<CR>
+let NERDTreeShowBookmarks=1 " open bookmarks when starting up vim
 
 " Start NERDTree and leave the cursor in it.
 autocmd VimEnter * NERDTree
