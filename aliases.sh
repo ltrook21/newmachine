@@ -38,9 +38,12 @@ sudo echo "alias nv=\"nvim\"" | tee -a ~/.zshrc
 
 # k8s
 
-sudo echo "alias kgp=\"k get po\"" | tee -a ~/.zshrc
-sudo echo "alias kgs=\"k get svc\"" | tee -a ~/.zshrc
 sudo echo "alias kg=\"k get\"" | tee -a ~/.zshrc
+sudo echo "alias kgp=\"k get po\"" | tee -a ~/.zshrc
+sudo echo "alias kgn=\"k get no\"" | tee -a ~/.zshrc
+sudo echo "alias kgl=\"k get log\"" | tee -a ~/.zshrc
+sudo echo "alias kghpa=\"k get hpa\"" | tee -a ~/.zshrc
+sudo echo "alias kgs=\"k get svc\"" | tee -a ~/.zshrc
 sudo echo "alias kgd=\"k get deploy\"" | tee -a ~/.zshrc
 sudo echo "alias kc=\"k create\"" | tee -a ~/.zshrc
 sudo echo "alias kr=\"k run\"" | tee -a ~/.zshrc
@@ -55,5 +58,6 @@ sudo echo "alias gtc=\"git commit -a\"" | tee -a ~/.zshrc
 sudo echo "alias gtp=\"git push\"" | tee -a ~/.zshrc
 sudo echo "alias gtpu=\"git pull\"" | tee -a ~/.zshrc
 sudo echo "alias kns=\"kubens\"" | tee -a ~/.zshrc
+
 
 sudo echo "eval \$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" | tee -a ~/.zshrc
