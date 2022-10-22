@@ -18,6 +18,7 @@ Plug 'https://github.com/catppuccin/nvim' " Colorscheme tundra
 Plug 'Luxed/ayu-vim' " ayu vim
 Plug 'https://github.com/Shatur/neovim-ayu' " neovim ayu
 Plug 'tpope/vim-fugitive' " git tool for nvim
+Plug 'm4xshen/autoclose.nvim' " autoclose
 call plug#end()
 
 " let g:catppuccin_flavour = "macchiato" " latte, frappe, macchiato, mocha
