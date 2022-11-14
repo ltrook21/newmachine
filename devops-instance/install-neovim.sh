@@ -14,7 +14,7 @@ sudo apt install neovim -y
 mkdir ~/.config/ # should put an if statement to check if this folder exists.
 mkdir ~/.config/nvim
 
-sudo cp ~/scripts/newmachine/init.vim ~/.config/nvim -y
+sudo cp ~/scripts/newmachine/nvim/init.vim ~/.config/nvim -y
 
 
 
