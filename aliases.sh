@@ -59,6 +59,7 @@ sudo echo "alias kns=\"kubens\"" | tee -a ~/.zshrc
 sudo echo "alias venv=\"source venv/bin/activate\"" | tee -a ~/.zshrc
 sudo echo "alias pmr=\"python manage.py runserver\"" | tee -a ~/.zshrc
 sudo echo "alias f=\"flask\"" | tee -a ~/.zshrc
+sudo echo "alias ve=\"source venv/bin/activate\"" | tee -a ~/.zshrc
 
 # git
 sudo echo "alias gtc=\"git commit -a\"" | tee -a ~/.zshrc
