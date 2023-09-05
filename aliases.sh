@@ -24,8 +24,6 @@ sudo echo "alias kpf=\"k port-forward\"" | tee -a ~/.bashrc
 sudo echo "alias kds=\"k describe\"" | tee -a ~/.bashrc
 sudo echo "alias kd=\"k delete\"" | tee -a ~/.bashrc
 
-
-
 # ZSH
 
 sudo echo "alias k=\"kubectl\"" | tee -a ~/.zshrc
@@ -34,7 +32,6 @@ sudo echo "alias mk=\"minikube\"" | tee -a ~/.zshrc
 sudo echo "alias dk=\"docker\"" | tee -a ~/.zshrc
 sudo echo "alias dkc=\"docker compose\"" | tee -a ~/.zshrc
 sudo echo "alias nv=\"nvim\"" | tee -a ~/.zshrc
-
 
 # k8s
 
@@ -54,7 +51,6 @@ sudo echo "alias kd=\"k delete\"" | tee -a ~/.zshrc
 sudo echo "alias kns=\"kubens\"" | tee -a ~/.zshrc
 
 
-
 # python
 sudo echo "alias venv=\"source venv/bin/activate\"" | tee -a ~/.zshrc
 sudo echo "alias pmr=\"python manage.py runserver\"" | tee -a ~/.zshrc
@@ -66,7 +62,6 @@ sudo echo "alias p=\"python\"" | tee -a ~/.zshrc
 sudo echo "alias gtc=\"git commit -a\"" | tee -a ~/.zshrc
 sudo echo "alias gtp=\"git push\"" | tee -a ~/.zshrc
 sudo echo "alias gtpu=\"git pull\"" | tee -a ~/.zshrc
-sudo echo "alias kns=\"kubens\"" | tee -a ~/.zshrc
 
 
 sudo echo "eval \$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" | tee -a ~/.zshrc
