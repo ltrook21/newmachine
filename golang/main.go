@@ -8,68 +8,68 @@ import (
 )
 
 const bashcontentToAdd = `
-export alias l="ls -lha"
-export alias k="kubectl"
-export alias kx="kubectx"
-export alias mk="minikube"
-export alias dk="docker"
-export alias dkc="docker compose"
-export alias nv="nvim"
+alias l="ls -lha"
+alias k="kubectl"
+alias kx="kubectx"
+alias mk="minikube"
+alias dk="docker"
+alias dkc="docker compose"
+alias nv="nvim"
 
 
-export alias kgp="k get po"
-export alias kgs="k get svc"
-export alias kg="k get"
-export alias kgd="k get deploy"
-export alias kc="k create"
-export alias kr="k run"
-export alias ka="k apply -f "
-export alias kpf="k port-forward"
-export alias kds="k describe"
-export alias kd="k delete"
+alias kgp="k get po"
+alias kgs="k get svc"
+alias kg="k get"
+alias kgd="k get deploy"
+alias kc="k create"
+alias kr="k run"
+alias ka="k apply -f "
+alias kpf="k port-forward"
+alias kds="k describe"
+alias kd="k delete"
 `
 
 const zshcontentToAdd = `
-export alias k="kubectl"
-export alias kx="kubectx"
-export alias mk="minikube"
-export alias dk="docker"
-export alias dkc="docker compose"
-export alias nv="nvim"
+alias k="kubectl"
+alias kx="kubectx"
+alias mk="minikube"
+alias dk="docker"
+alias dkc="docker compose"
+alias nv="nvim"
 
 # k8s
 
-export alias kg="k get"
-export alias kgp="k get po"
-export alias kgn="k get no"
-export alias kgl="k get logs"
-export alias kghpa="k get hpa"
-export alias kgs="k get svc"
-export alias kgd="k get deploy"
-export alias kc="k create"
-export alias kr="k run"
-export alias ka="k apply -f "
-export alias kpf="k port-forward"
-export alias kds="k describe"
-export alias kd="k delete"
-export alias kns="kubens"
+alias kg="k get"
+alias kgp="k get po"
+alias kgn="k get no"
+alias kgl="k get logs"
+alias kghpa="k get hpa"
+alias kgs="k get svc"
+alias kgd="k get deploy"
+alias kc="k create"
+alias kr="k run"
+alias ka="k apply -f "
+alias kpf="k port-forward"
+alias kds="k describe"
+alias kd="k delete"
+alias kns="kubens"
 
 
 # python
-export alias venv="source venv/bin/activate"
-export alias pmr="python manage.py runserver"
-export alias f="flask"
-export alias ve="source venv/bin/activate"
-export alias p="python"
+alias venv="source venv/bin/activate"
+alias pmr="python manage.py runserver"
+alias f="flask"
+alias ve="source venv/bin/activate"
+alias p="python"
 
 # git
-export alias gtc="git commit -a"
-export alias gtp="git push"
-export alias gtpu="git pull"
+alias gtc="git commit -a"
+alias gtp="git push"
+alias gtpu="git pull"
 
 
 # vpn
-export alias pvc="protonvpn-cli"
+alias pvc="protonvpn-cli"
 `
 
 func appendToFile(path string, content string) error {
