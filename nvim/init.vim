@@ -51,8 +51,8 @@ hi EndOfBuffer guibg=bg guifg=bg " this hides the "~" in the nerdtree menu
 
 
 " Transparency - Idk If I like it so far...
-" hi Normal guibg=NONE ctermbg=NONE
-" hi NormalNC
+hi Normal guibg=NONE ctermbg=NONE
+hi NormalNC
 
 " end transparency
 " end theme
