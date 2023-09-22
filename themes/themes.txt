@@ -1,0 +1,1 @@
+theme: papirus , cursor: xcursor
