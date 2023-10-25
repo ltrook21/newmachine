@@ -30,6 +30,9 @@ local plugins = {
     {
       require'lspconfig'.marksman.setup{}
     },
-  }
+  },
+  {
+    "ellisonleao/glow.nvim", config = true, cmd = "Glow"
+  },
 }
 return plugins
