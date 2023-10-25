@@ -28,3 +28,10 @@ lspconfig.gopls.setup({
     }
   }
 })
+
+lspconfig.marksman.setup({
+  cmd = { "marksman", "server" },
+  filetypes = { "markdown", "markdown.mdx" },
+  root_dir = util.root_pattern(".git", ".marksman.toml"),
+  single_file_support = true,
+})
