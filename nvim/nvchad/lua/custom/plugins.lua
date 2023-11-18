@@ -15,6 +15,7 @@ local plugins = {
       "yaml-configuration-server",
       "dockerfile-configuration-server",
       "docker-compose-language-server",
+      "pylizer"
       },
     },
     {
@@ -33,6 +34,31 @@ local plugins = {
   },
   {
     "ellisonleao/glow.nvim", config = true, cmd = "Glow"
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        -- defaults 
+        "vim",
+        "lua",
+
+        -- web dev 
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "tsx",
+        "json",
+       -- high level
+        "python",
+       -- low level
+        "c",
+        "zig",
+        "rust",
+        "go"
+      },
+      },
   },
 }
 return plugins

@@ -35,3 +35,18 @@ lspconfig.marksman.setup({
   root_dir = util.root_pattern(".git", ".marksman.toml"),
   single_file_support = true,
 })
+
+
+lspconfig.pylyzer.setup({
+  cmd = { "pylyzer", "--server" },
+  filetypes = {"python"},
+  settings = {
+    python = {
+      checkOnType = false,
+      diagnostics = true,
+      inlayHints = true,
+      smartCompletion = true,
+    }
+  },
+  single_file_support = true,
+})
