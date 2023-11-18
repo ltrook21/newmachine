@@ -51,11 +51,26 @@ lspconfig.pylyzer.setup({
   single_file_support = true,
 })
 
-
+-- cmd to install LSP: npm i -g vscode-langservers-extracted 
 lspconfig.jsonls.setup({
   cmd = { "vscode-json-language-server", "--stdio" },
   filetypes = {"json", "jsonc"},
   init_options = {provideFormatter = true},
   root_dir = util.find_git_ancestor,
   single_file_support = true,
+})
+
+-- cmd to install LSP: yarn global add yaml-language-server 
+lspconfig.yamlls.setup({
+  cmd = { "yaml-language-server", "--stdio" },
+  filetypes = {"yaml", "yaml.docker-compose"},
+  root_dir = util.find_git_ancestor,
+  settings = {
+    redhat = {
+      telemetry = {
+        enabled = false
+      }
+    }
+  },
+  single_file_support = true
 })
