@@ -15,7 +15,8 @@ local plugins = {
       "yaml-configuration-server",
       "dockerfile-configuration-server",
       "docker-compose-language-server",
-      "pylizer"
+      "pylizer",
+      "jsonls",
       },
     },
     {
