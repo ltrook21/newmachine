@@ -1,6 +1,6 @@
 ---@type ChadrcConfig
 local M = {}
-M.ui = { 
+M.ui = {
   theme = 'yoru',
   theme_toggle = {'yoru', "one_light"},
   transparency = true,
@@ -8,8 +8,8 @@ M.ui = {
     icons = true,
   },
   statusline = {
-    theme = "vscode",
-    separator_style = "round",
+    theme = "default",
+    separator_style = "default",
   },
   tabufline = {},
   nvdash = {
