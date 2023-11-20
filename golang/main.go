@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 )
 
-const bashcontentToAdd = `
+const bashcontentToAdd1 = `
 alias l="ls -lha"
 alias k="kubectl"
 alias kx="kubectx"
@@ -57,7 +57,11 @@ function ranger-cd {
     tempfile=$(mktemp)
     ranger --choosedir="$tempfile" "${@:-$(pwd)}"
     test -f "$tempfile" &&
-    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
+    if [ "$(cat -- "$tempfile")" != "$(echo -n `
+
+const pwdbash = "`pwd`" 
+
+const bashcontentToAdd2 = `)" ]; then
         cd -- "$(cat "$tempfile")"
     fi
     rm -f -- "$tempfile"
@@ -65,6 +69,7 @@ function ranger-cd {
 export EDITOR=nvim
 
 `
+const bashcontentToAdd = bashcontentToAdd1 + pwdbash + bashcontentToAdd2
 
 const zshcontentToAdd1 = `
 alias k="kubectl"
@@ -122,7 +127,8 @@ function ranger-cd {
     if [ "$(cat -- "$tempfile")" != "$(echo -n `
 
 const pwd2 = "`pwd`" 
-const zshcontentToAdd3 `)" ]; then
+
+const zshcontentToAdd3 = `)" ]; then
         cd -- "$(cat "$tempfile")"
     fi
     rm -f -- "$tempfile"
@@ -130,6 +136,8 @@ const zshcontentToAdd3 `)" ]; then
 export EDITOR=nvim
 `
 const zshcontentToAdd = zshcontentToAdd1 + pwd2 + zshcontentToAdd3 
+
+
 func appendToFile(path string, content string) error {
 	f, err := os.OpenFile(path, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
