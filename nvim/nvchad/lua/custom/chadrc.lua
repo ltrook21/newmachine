@@ -11,7 +11,7 @@ M.ui = {
     theme = "default",
     separator_style = "default",
   },
-  tabufline = {},
+  -- tabufline = {},
   nvdash = {
     load_on_startup = true,
     header = {

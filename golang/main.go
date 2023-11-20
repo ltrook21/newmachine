@@ -27,6 +27,43 @@ alias ka="k apply -f "
 alias kpf="k port-forward"
 alias kds="k describe"
 alias kd="k delete"
+
+# python
+alias venv="source venv/bin/activate"
+alias pmr="python manage.py runserver"
+alias f="flask"
+alias ve="source venv/bin/activate"
+alias p="python"
+
+# git
+alias gtc="git commit -a"
+alias gtp="git push"
+alias gtpu="git pull"
+
+
+# vpn
+alias pvc="protonvpn-cli"
+
+
+
+# Ranger
+## Important! Do not delete for nvim config!
+export VIM="/usr/share/nvim"
+export VIMRUNTIME="/usr/share/nvim/runtime"
+
+alias r="ranger-cd"
+
+function ranger-cd {
+    tempfile=$(mktemp)
+    ranger --choosedir="$tempfile" "${@:-$(pwd)}"
+    test -f "$tempfile" &&
+    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
+        cd -- "$(cat "$tempfile")"
+    fi
+    rm -f -- "$tempfile"
+}
+export EDITOR=nvim
+
 `
 
 const zshcontentToAdd = `
@@ -70,6 +107,25 @@ alias gtpu="git pull"
 
 # vpn
 alias pvc="protonvpn-cli"
+
+# Ranger
+## Important! Do not delete for nvim config!
+export VIM="/usr/share/nvim"
+export VIMRUNTIME="/usr/share/nvim/runtime"
+
+alias r="ranger-cd"
+
+function ranger-cd {
+    tempfile=$(mktemp)
+    ranger --choosedir="$tempfile" "${@:-$(pwd)}"
+    test -f "$tempfile" &&
+    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
+        cd -- "$(cat "$tempfile")"
+    fi
+    rm -f -- "$tempfile"
+}
+export EDITOR=nvim
+
 `
 
 func appendToFile(path string, content string) error {
