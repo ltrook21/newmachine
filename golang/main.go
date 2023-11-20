@@ -66,7 +66,7 @@ export EDITOR=nvim
 
 `
 
-const zshcontentToAdd = `
+const zshcontentToAdd1 = `
 alias k="kubectl"
 alias kx="kubectx"
 alias mk="minikube"
@@ -119,15 +119,17 @@ function ranger-cd {
     tempfile=$(mktemp)
     ranger --choosedir="$tempfile" "${@:-$(pwd)}"
     test -f "$tempfile" &&
-    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
+    if [ "$(cat -- "$tempfile")" != "$(echo -n `
+
+const pwd2 = "`pwd`" 
+const zshcontentToAdd3 `)" ]; then
         cd -- "$(cat "$tempfile")"
     fi
     rm -f -- "$tempfile"
 }
 export EDITOR=nvim
-
 `
-
+const zshcontentToAdd = zshcontentToAdd1 + pwd2 + zshcontentToAdd3 
 func appendToFile(path string, content string) error {
 	f, err := os.OpenFile(path, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
