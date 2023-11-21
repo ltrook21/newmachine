@@ -2,7 +2,7 @@
 local M = {}
 M.ui = {
   theme = 'yoru',
-  theme_toggle = {'yoru', "one_light"},
+  theme_toggle = {'bearded-arc', "one_light"},
   transparency = true,
   cmp = {
     icons = true,
