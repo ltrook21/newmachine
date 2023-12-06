@@ -35,6 +35,10 @@ alias f="flask"
 alias ve="source venv/bin/activate"
 alias p="python"
 
+# rust
+alias c="cargo"
+alias cr="cargo run"\
+
 # git
 alias gtc="git commit -a"
 alias gtp="git push"
@@ -103,6 +107,10 @@ alias pmr="python manage.py runserver"
 alias f="flask"
 alias ve="source venv/bin/activate"
 alias p="python"
+
+# rust
+alias c="cargo"
+alias cr="cargo run"
 
 # git
 alias gtc="git commit -a"
