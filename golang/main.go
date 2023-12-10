@@ -39,6 +39,10 @@ alias p="python"
 alias c="cargo"
 alias cr="cargo run"\
 
+# golang
+alias g="go"
+alias gr="go run"
+
 # git
 alias gtc="git commit -a"
 alias gtp="git push"
