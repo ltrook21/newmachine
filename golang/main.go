@@ -40,6 +40,7 @@ alias c="cargo"
 alias cr="cargo run"\
 
 # golang
+export GOPATH=$HOME/Documents/code/go
 alias g="go"
 alias gr="go run"
 
@@ -111,6 +112,11 @@ alias pmr="python manage.py runserver"
 alias f="flask"
 alias ve="source venv/bin/activate"
 alias p="python"
+
+# golang
+export GOPATH=$HOME/Documents/code/go
+alias g="go"
+alias gr="go run"
 
 # rust
 alias c="cargo"
